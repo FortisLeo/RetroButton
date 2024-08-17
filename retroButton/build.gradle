@@ -2,7 +2,22 @@ plugins {
     alias(libs.plugins.androidLibrary)
     id 'maven-publish'
 
+
+
 }
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.FortisLeo'
+            artifactId = 'retroButton'
+            version = '1.0.0'
+
+
+        }
+    }
+}
+
 
 android {
     namespace 'com.rishitgoklani.retrobutton'
@@ -25,7 +40,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
 
 
 
