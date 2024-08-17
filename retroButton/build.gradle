@@ -8,7 +8,8 @@ android {
 
     defaultConfig {
         minSdk 24
-
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -31,7 +32,6 @@ dependencies {
 
     implementation libs.appcompat
     implementation libs.material
-    implementation 'com.github.User:Repo:Tag'
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
